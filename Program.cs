@@ -10,13 +10,11 @@ namespace KatasCS
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(new BigInteger(25826) * 4);
-
-
             try {
                 // *Sitio para colocar los tests
-                SumFctTests.Test1();
-                SumFctTests.Test2();
+                var test = new Sample_Test_MoveZeroes();
+                test.Test();
+
             } catch (NUnit.Framework.AssertionException ae){
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(ae);
